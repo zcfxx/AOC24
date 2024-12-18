@@ -51,7 +51,7 @@ impl FromStr for Paging {
 }
 
 impl Paging {
-    fn validate_pages(&self) -> i32 {
+    pub fn validate_pages(&self) -> i32 {
         self.pages
             .iter()
             .filter(|pages| {
